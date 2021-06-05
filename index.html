@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a4d05c5536.js" crossorigin="anonymous"></script>
+    <title>Covid Tracker</title>
+</head>
+<body>
+    
+    <header class="container">
+        <div class="logo">
+            <h1>C<span><i class="fas fa-virus"></i></span>VID-19 TR<span><i class="fas fa-viruses"></i></span>CKER</h1>
+        </div>
+        
+        <!-- Input Section -->
+        <form action="#">
+            <select name="state" id="state" required>
+                <option value="AP">Andhra Pradesh</option>
+                <option value="AN">Andaman and Nicobar Islands</option>
+                <option value="AR">Arunachal Pradesh</option>
+                <option value="AS">Assam</option>
+                <option value="BR">Bihar</option>
+                <option value="CH">Chandigarh</option>
+                <option value="CT">Chhattisgarh</option>
+                <option value="DN">Dadra and Nagar Haveli and Daman and Diu</option>
+                <option value="DL">Delhi</option>
+                <option value="GA">Goa</option>
+                <option value="GJ">Gujarat</option>
+                <option value="HR">Haryana</option>
+                <option value="HP">Himachal Pradesh</option>
+                <option value="JK">Jammu and Kashmir</option>
+                <option value="JH">Jharkhand</option>
+                <option value="KA">Karnataka</option>
+                <option value="KL">Kerala</option>
+                <option value="LD">Ladakh</option>
+                <option value="LA">Lakshadweep</option>
+                <option value="MP">Madhya Pradesh</option>
+                <option value="MH">Maharashtra</option>
+                <option value="MN">Manipur</option>
+                <option value="ML">Meghalaya</option>
+                <option value="MZ">Mizoram</option>
+                <option value="NL">Nagaland</option>
+                <option value="OR">Odisha</option>
+                <option value="PY">Puducherry</option>
+                <option value="PB">Punjab</option>
+                <option value="RJ">Rajasthan</option>
+                <option value="SK">Sikkim</option>
+                <option value="TN">Tamil Nadu</option>
+                <option value="TG">Telangana</option>
+                <option value="TR">Tripura</option>
+                <option value="UP">Uttar Pradesh</option>
+                <option value="UT">Uttarakhand</option>
+                <option value="WB">West Bengal</option>
+            </select>
+            <input type="date" name="date" id="date" required>
+            <input type="submit" value="Track">
+        </form>
+    </header>
+
+    <!-- Output Section -->
+    <main class="container">
+        <!-- Daily Section -->
+        <h2>Daily Data</h2>
+        <div class="underline"></div>
+        <div class="daily">
+            <div class="daily-data">
+                <h4>Confirmed</h4>
+                <p class="confirmed">--</p>
+            </div>
+            <div class="daily-data">
+                <h4>Recovered</h4>
+                <p class="recovered">--</p>
+            </div>
+            <div class="daily-data">
+                <h4>Deceased</h4>
+                <p class="deceased">--</p>
+            </div>
+            <div class="daily-data">
+                <h4>Tested</h4>
+                <p class="tested">--</p>
+            </div>
+            <div class="daily-data">
+                <h4>Vaccinated-1</h4>
+                <p class="vaccinated1">--</p>
+            </div>
+            <div class="daily-data">
+                <h4>Vaccinated-2</h4>
+                <p class="vaccinated2">--</p>
+            </div>
+        </div>
+
+        <!-- Total Section -->
+        <h2>Total Data</h2>
+        <div class="underline"></div>
+        <div class="total">
+            <div class="total-data">
+                <h4>Total Confirmed</h4>
+                <p class="tconfirmed">--</p>
+            </div>
+            <div class="total-data">
+                <h4>Total Recovered</h4>
+                <p class="trecovered">--</p>
+            </div>
+            <div class="total-data">
+                <h4>Total Deceased</h4>
+                <p class="tdeceased">--</p>
+            </div>
+            <div class="total-data">
+                <h4>Total Tested</h4>
+                <p class="ttested">--</p>
+            </div>
+            <div class="total-data">
+                <h4>Total Vaccinated-1</h4>
+                <p class="tvaccinated1">--</p>
+            </div>
+            <div class="total-data">
+                <h4>Total Vaccinated-2</h4>
+                <p class="tvaccinated2">--</p>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

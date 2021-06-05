@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sen', sans-serif;
+}
+
+body{
+    background: linear-gradient(to bottom right,#ade8f4,#fff);
+}
+
+h2{
+    text-align: center;
+    margin: 3rem 0 0 1rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+h4{
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+i{
+    color: #012a4a;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.underline{
+    width: 4rem;
+    height: 0.25rem;
+    background-color: #f5a851;
+    margin: 0 auto;
+    margin-top: 0.1rem;
+}
+
+.logo{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Input Section */
+form{
+    display: flex;
+    justify-content: center;
+}
+
+form select{
+    height: 2.5rem;
+    width: 20rem;
+    letter-spacing: 0.1rem;
+}
+
+select option{
+    color: #000;
+}
+
+
+form input[type=date], form select{
+    margin-right: 1rem;
+    padding: 0 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: linear-gradient(to bottom right,#012a4a,#61a5c2);
+    color: #fff;
+    cursor: pointer;
+    /* border-bottom: 0.2rem solid #132c33; */
+}
+
+form input[type=submit]{
+    padding: 0 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #0077b6;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover{
+    background-color: #0a496b;
+    transition: all 0.3s;
+}
+
+
+/* Output Section */
+.daily, .total{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.daily-data, .total-data{
+    margin: 1rem;
+    text-align: center;
+    padding: 1rem;
+    letter-spacing: 0.1rem;
+    box-shadow: 0px 2px 7px #000;
+    border-radius: 0.4rem;
+    /* border-bottom: 0.2rem solid #132c33; */
+}
+
+.daily-data{
+    background: linear-gradient(to bottom right,#023e8a,#ade8f4);
+    color: #fff;
+}
+
+.total-data{
+    background: linear-gradient(to bottom right,#0a9396,#94d2bd);
+    color: #fff;
+}
+
+.daily-data p, .total-data p{
+    margin: 1rem 0;
+    /* font-weight: bold; */
+    font-size: 1.3rem;
+}
+
+
+/* Media queries */
+@media only screen and (max-width:767px){
+
+    /* .container{
+        max-width: 0;
+        margin: 0 auto;
+    } */
+
+    form{
+        display: flex;
+        flex-direction: column;
+        height: 8rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    form input[type=date], form select{
+        margin: 0;
+    }
+
+    form input[type=date]{
+        height: 2rem;
+    }
+
+    form input[type=submit]{
+        height: 2rem;
+    }
+
+    .daily, .total{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .daily, .total{
+        grid-template-columns: auto;
+    }
+
+    /* .daily-data, .total-data{
+        min-width: 4rem;
+    } */
+}
