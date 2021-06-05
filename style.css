@@ -153,14 +153,33 @@ form input[type=submit]:hover{
     .daily, .total{
         grid-template-columns: auto auto;
     }
+
+    h4{
+        font-size: 0.9rem;
+    }
 }
 
 @media only screen and (max-width:400px){
     .daily, .total{
-        grid-template-columns: auto;
+        grid-template-columns:  auto auto;
     }
 
-    /* .daily-data, .total-data{
+    .daily-data, .total-data{
         min-width: 4rem;
-    } */
+    }
+
+    h4{
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width:300px){
+
+    form select{
+        width: 15rem;
+    }
+
+    .daily, .total{
+        grid-template-columns:  auto;
+    }
 }
