@@ -10,6 +10,13 @@ form.addEventListener('submit', loadData);
 
 function loadData(e){
 
+    console.log(state.value);
+
+    if(state.value === "select"){
+        alert("Please select a state");
+        return;
+    }
+
     const xhr = new XMLHttpRequest();
 
     // xhr.open('GET','https://api.covid19india.org/v4/min/data.min.json', true)
