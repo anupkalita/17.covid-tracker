@@ -10,8 +10,7 @@ form.addEventListener('submit', loadData);
 
 function loadData(e){
 
-    console.log(state.value);
-
+    // if no state is selected
     if(state.value === "select"){
         alert("Please select a state");
         return;
