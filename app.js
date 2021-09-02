@@ -19,7 +19,7 @@ function loadData(e){
     const xhr = new XMLHttpRequest();
 
     // xhr.open('GET','https://api.covid19india.org/v4/min/data.min.json', true)
-    xhr.open('GET','https://api.covid19india.org/v4/min/timeseries.min.json', true)
+    xhr.open('GET','https://data.covid19india.org/v4/min/timeseries.min.json', true);
 
     xhr.onload = function(){
         if(this.status === 200){
